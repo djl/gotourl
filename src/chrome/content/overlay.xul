@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<overlay id="gotourl" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://gotourl/content/gotourl.js" />
+
+	<popup id="contentAreaContextMenu">
+		<menuitem id="gotourl-current" label="Go To Address" insertbefore="context-bookmarklink" oncommand="gotoURL('current');"/>
+		<menuitem id="gotourl-window" label="Go To Address in New Window" insertbefore="context-bookmarklink" oncommand="gotoURL('window');"/>
+		<menuitem id="gotourl-tab" label="Go To Address in New Tab" insertbefore="context-bookmarklink" oncommand="gotoURL('tab');"/>
+		<menuseparator id="goto" insertbefore="context-bookmarklink"/>
+	</popup>
+</overlay>

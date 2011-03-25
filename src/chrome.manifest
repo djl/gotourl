@@ -1,0 +1,2 @@
+content gotourl chrome/content/
+overlay chrome://browser/content/browser.xul chrome://gotourl/content/overlay.xul
