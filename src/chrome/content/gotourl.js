@@ -1,6 +1,8 @@
 window.addEventListener("load", function(event) {
     var menu = document.getElementById("contentAreaContextMenu");
-    menu.addEventListener("popupshowing", setupMenuItems, false);
+    if (menu) {
+        menu.addEventListener("popupshowing", setupMenuItems, false);
+    }
 }, false);
 
 function setupMenuItems(event) {
