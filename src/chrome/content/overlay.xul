@@ -3,9 +3,9 @@
 	<script type="application/x-javascript" src="chrome://gotourl/content/gotourl.js" />
 
 	<popup id="contentAreaContextMenu">
-		<menuitem id="gotourl-current" label="Go To Address" insertbefore="context-bookmarklink" oncommand="gotoURL('current');"/>
-		<menuitem id="gotourl-window" label="Go To Address in New Window" insertbefore="context-bookmarklink" oncommand="gotoURL('window');"/>
-		<menuitem id="gotourl-tab" label="Go To Address in New Tab" insertbefore="context-bookmarklink" oncommand="gotoURL('tab');"/>
+		<menuitem id="gotourl-current" label="Go To Address" insertbefore="context-bookmarklink" oncommand="gotoURL.go('current');"/>
+		<menuitem id="gotourl-window" label="Go To Address in New Window" insertbefore="context-bookmarklink" oncommand="gotoURL.go('window');"/>
+		<menuitem id="gotourl-tab" label="Go To Address in New Tab" insertbefore="context-bookmarklink" oncommand="gotoURL.go('tab');"/>
 		<menuseparator id="goto" insertbefore="context-bookmarklink"/>
 	</popup>
 </overlay>
