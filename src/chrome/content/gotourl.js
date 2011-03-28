@@ -1,11 +1,11 @@
 window.addEventListener("load", function(event) {
     var menu = document.getElementById("contentAreaContextMenu");
     if (menu) {
-        menu.addEventListener("popupshowing", setupMenuItems, false);
+        menu.addEventListener("popupshowing", gotoURLInit, false);
     }
 }, false);
 
-function setupMenuItems(event) {
+function gotoURLInit(event) {
     var menuItems = ['current', 'window', 'tab'];
     for (var i=0; i < menuItems.length; i++) {
         var item = document.getElementById('gotourl-' +  menuItems[i]);
