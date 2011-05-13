@@ -3,10 +3,10 @@ GOTO URL
 
 Open URLs from the context menu.
 
-Kinda like [Fetch Text URL][ftu] only with less options. Oh and it works
-on Firefox 3 and Firefox 4.
+This functionality has been built into Firefox for a while
+but it only works with text that somewhat resembles a URL.
 
-[ftu]: https://addons.mozilla.org/en-US/firefox/addon/fetch-text-url/
+GOTO URL shows the contextual items for *all* selected text.
 
 
 INSTALL
