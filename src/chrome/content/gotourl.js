@@ -7,10 +7,14 @@ window.addEventListener("load", function(event) {
 
 var gotoURL = {
     init: function() {
-        var menuItems = ['current', 'window', 'tab'];
+        var menuItems = ['current', 'window', 'tab', 'link-window', 'link-tab'];
         for (var i=0; i < menuItems.length; i++) {
             var item = document.getElementById('gotourl-' +  menuItems[i]);
-            item.hidden = !gContextMenu.isTextSelected;
+            if (menuItems[i].indexOf("link") == 0){
+                item.hidden = !gContextMenu.onLink;
+            } else {
+                item.hidden = !gContextMenu.isTextSelected;
+            }
         }
     },
 
