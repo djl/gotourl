@@ -10,10 +10,10 @@ var gotoURL = {
         var menuItems = ['current', 'window', 'tab', 'link-window', 'link-tab'];
         for (var i=0; i < menuItems.length; i++) {
             var item = document.getElementById('gotourl-' +  menuItems[i]);
-            if (menuItems[i].indexOf("link") == 0){
+            if (menuItems[i].indexOf("link") == 0) {
                 item.hidden = !gContextMenu.onLink;
             } else {
-                item.hidden = !gContextMenu.isTextSelected;
+                item.hidden = !(gContextMenu.isTextSelected && !gContextMenu.onLink);
             }
         }
     },
