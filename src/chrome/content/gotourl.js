@@ -20,7 +20,7 @@ var gotoURL = {
 
     go: function(where) {
         var focusedWindow = document.commandDispatcher.focusedWindow;
-        var url = focusedWindow.getSelection();
+        var url = gContextMenu.onLink ? gContextMenu.target.href : focusedWindow.getSelection();
 
         switch(where) {
         case "current":
