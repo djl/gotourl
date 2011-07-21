@@ -16,4 +16,4 @@ INSTALL
 
 2. Drag the resulting .xpi file onto Firefox
 
-[latest]: https://github.com/xvzf/gotourl/raw/master/builds/gotourl-latest.xpi
+[latest]: https://github.com/djl/gotourl/raw/master/builds/gotourl-latest.xpi
